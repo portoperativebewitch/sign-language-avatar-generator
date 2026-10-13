@@ -1,0 +1,20 @@
+version = "0.4.1"
+log_level = "INFO"
+
+[audio]
+samplerate = 16000
+chunk_ms = 20
+
+[models]
+caption_dir = "models/checkpoints/caption"
+gloss_pack = "models/checkpoints/gloss_lexicon.json"
+rig_pack = "assets/rigs/default_rig.glb"
+
+[render]
+backend = "onnx"
+fps = 30
+overlay = true
+
+[language]
+tag = "ase"
+gloss_order = "sov"
