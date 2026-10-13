@@ -1,0 +1,43 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Model weights & cached avatar rigs (large binaries, fetch via scripts/fetch_assets.py)
+assets/rigs/*.fbx
+assets/rigs/*.glb
+models/checkpoints/*.onnx
+models/checkpoints/*.pt
+models/checkpoints/*.safetensors
+.cache/hf/
+.cache/torch/
+
+# Runtime captures
+runtime/captures/
+runtime/logs/
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Local env
+.env
+config/local.toml
